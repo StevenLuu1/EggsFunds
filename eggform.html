@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question</title>
+    </head>
+    <body>
+        <div><h1>Questions</h1></div>
+        <div><br>
+            <h3>What is your name?</h3>
+            <form>
+                <label for="name">Enter your name: </label><br>
+                <input type="text" name="fname"><br>
+            </form>
+        </div>
+        <div><br>
+            <h3>How many eggs do you eat a day?</h3>
+            <label for="eggs">Choose quantity:</label>
+            <select name="eggs" id="eegs">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4+">4+</option>
+            </select>
+        </div>
+        <div><br>
+            <h3>Between these eggs, which one do you prefer?</h3>
+            <form>
+                <input type="radio" id="boiled" name="favegg" value="boiled">
+                <label for="boiled">Boiled</label><br>
+                <input type="radio" name="favegg" id="sunny-side-up" value="sunny-side-up">
+                <label for="sunny-side-up">Sunny-side-up</label><br>
+                <input type="radio" id="over-egg" name="favegg" value="over-egg">
+                <label for="over-egg">Over-egg</label><br>
+                <input type="radio" id="scrambled" name="favegg" value="scrambled">
+                <label for="scrambled">Scrambled</label><br>
+                <input type="radio" id="omelette" name="favegg" value="omelette">
+                <label for="omelette">Omelette</label><br>
+                <input type="radio" id="poached" name="favegg" value="poached">
+                <label for="poached">Poached</label><br>
+            </form>
+        </div>
+        <div><br>
+            <h3>When do you eat you eggs?</h3>
+            <form>
+                <input type="checkbox" id="breakfast" name="breakfast" value="breakfast">
+                <label for="breakfast">Morning</label><br>
+                <input type="checkbox" id="dinner" name="dinner" value="dinner">
+                <label for="morning">Dinner</label><br>
+                <input type="checkbox" id="supper" name="supper" value="supper">
+                <label for="morning">Supper</label><br>
+            </form>
+        </div>
+        <div><br>
+            <form>
+                <input type="submit" value="Done">
+            </form>
+        </div>
+    </body>
+</html>
