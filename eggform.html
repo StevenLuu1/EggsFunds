@@ -4,18 +4,35 @@
         <title>Question</title>
     </head>
     <body>
-        <div><h1>Questions</h1></div>
+        <div>
+            <a href="index.html">Go back</a>
+        </div>
+        <div>
+            <h1>Questions about egg</h1>
+            <img src="/images/sleepygud.jpg" alt="sleepygud" width="300">
+        </div>
         <div><br>
             <h3>What is your name?</h3>
             <form>
-                <label for="name">Enter your name: </label><br>
-                <input type="text" name="fname"><br>
+                <fieldset>
+                    <legend>User Information:</legend>
+                    <label for="fname">Enter your first name: </label><br>
+                    <input type="text" name="fname" required pattern=".[A-z]"><br><br>
+                    <label for="lname">Enter your last name: </label><br>
+                    <input type="text" name="lname" required pattern=".[A-z]"><br><br>
+                    <input type="submit">
+                </fieldset>
+                
             </form>
+        </div>
+        <div><br>
+            <h3>What do you like about eggs?</h3>
+            <textarea name="message" rows="5" cols="30"></textarea>
         </div>
         <div><br>
             <h3>How many eggs do you eat a day?</h3>
             <label for="eggs">Choose quantity:</label>
-            <select name="eggs" id="eegs">
+            <select name="eggs" id="eegs" size="5">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
