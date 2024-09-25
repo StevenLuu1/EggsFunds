@@ -2,6 +2,39 @@
 <html>
     <head>
         <title>First website</title>
+        <button type="button" onclick="alert('Egg!!')">Suprise!</button>
+        <script>
+            function Eggfunc() {
+                document.getElementById("egglist").innerHTML = "I also love egg :)";
+            }
+
+            function Eggim() {
+                 document.getElementById("eggim").src = "images/eggsleep.png";
+            }
+
+            function Howegg() {
+                let x = document.getElementById("howegg");
+                let y = document.getElementById("howegg1");
+                if (x.style.display == "none" && y.style.display == "none") {
+                    x.style.display = "block";
+                    y.style.display = "block";
+                }
+            }
+            
+            GetText("helloworld.txt")
+            async function GetText(file) {
+                let x = await fetch(file);
+                let y = await x.text();
+                document.getElementById("eggtxt").innerHTML = y;
+            }
+
+            function Eggtxt() {
+                let x = document.getElementById("eggtxt");
+                if (x.style.display == "none") {
+                    x.style.display = "block";
+                }
+            }
+        </script>
     </head>
     <body>
         <div>
@@ -11,14 +44,17 @@
             ways for the human to enjoy eating it. This website will present 
             the classic ways to cook an egg and what dishes can be done with 
             an egg as the main ingredients.
-            </p>  
-            <img src="images/gude-tama.gif" alt="gudetama" style="width: 300;height: 247px;">
+            </p>
+            <button type="button" onclick="Eggim()">Mood</button>
+            <img src="images/gude-tama.gif" style="display:block;" alt="gudetama" id="eggim" width="400">
+        </div>
         <div>
             <br><br><br><h2>Ways of Egg</h2>
-            <p>In this part, I will be displaying a list of ways to cook
+            <p id="egglist">In this part, I will be displaying a list of ways to cook
                 eggs in a yummy way.
             </p>
-            <ol>
+            <button type="button" onclick="Eggfunc()">Do you love egg?</button>
+            <br><br><ol>
                 <div>
                     <li>soft, medium, hard boiled</li>
                     <img src="images/boiled.jpg" alt="boiled" width="250">
@@ -48,12 +84,20 @@
         <div>
             <br><br><h2>How to Egg</h2>
             <p>This is how to cooked an egg</p>
-            <a href="how-to-egg.html">how to egg</a>
+            <br><br><a  href="how-to-egg.html">how to egg</a><br><br>
+            <button type="button" onclick="Howegg()">Know more about egg</button>
+            <p id="howegg" style="display:none;">History of egg</p>
+            <a  href="https://en.wikipedia.org/wiki/Egg" target="_blank" id="howegg1" style="display:none;">how to egg</a>
         </div>
         <div>
             <br><br><h2>Question about egg</h2>
             <p>Small form about yourself</p>
             <a href="eggform.html">eggform</a>
+        </div>
+        <div>
+            <br><h2>More info</h2>
+            <button type="button" onclick="Eggtxt()">Info</button>
+            <p id="eggtxt" style="display:none;"></p>
         </div>
     </body>
 </html>
