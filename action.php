@@ -5,7 +5,7 @@
     </head>
     <body>
         <div>
-            Hello <?php echo htmlspecialchars ($_POST['fname']) ($_POST['lname']); ?>
+            Hello <?php echo htmlspecialchars ($_POST['fname']); ?> <?php echo htmlspecialchars ($_POST['lname']); ?>
             This is what you said about egg!: <?php echo htmlspecialchars($_POST['message']); ?>
             It seems you eat <?php echo (int) $_POST ['egg']; ?> a day.
             You like to <?php echo htmlspecialchars ($_POST ['favegg']); ?> egg.
