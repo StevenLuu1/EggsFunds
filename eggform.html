@@ -8,7 +8,11 @@
             }
 
             function Blur() {
-                alert("Do not forget to put name")
+                let x=document.getElementById("fname")
+                if (x.value.length == 0) {
+                    alert("Do not forget to put name");
+                }
+                
             }
         </script>
     </head>
@@ -27,7 +31,7 @@
                 <fieldset>
                     <legend>User Information:</legend>
                     <label for="fname" >Enter your first name: </label><br>
-                    <input type="text" name="fname" required pattern=".{}[A-z]" onblur="Blur()"><br><br>
+                    <input type="text" id="fname" name="fname" required pattern=".{}[A-z]" onblur="Blur()"><br><br>
                     <label for="lname">Enter your last name: </label><br>
                     <input type="text" name="lname" required pattern=".{}[A-z]"><br><br>
                     <input type="submit">
