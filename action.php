@@ -9,7 +9,7 @@
             This is what you said about egg!: <?php echo htmlspecialchars($_POST['message']); ?>
             It seems you eat <?php echo (int) $_POST ['egg']; ?> a day.
             You like     <?php echo htmlspecialchars ($_POST ['favegg']); ?> egg.
-            You eat them during <?php echo ,($_POST['breakfast']); ?>
+            You eat them during <?php echo ($_POST['breakfast']); ?>
         </div>
 
     </body>
