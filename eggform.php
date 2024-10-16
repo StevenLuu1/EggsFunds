@@ -15,6 +15,19 @@
                 
             }
         </script>
+        <?php                
+            $server = "localhost";
+            $username = "pblu";
+            $password = "pblufows;"
+            $database = "dbegg";
+            $conn = mysqli_connect($server, $username, $password, $database);
+            // Check connection
+            if (!$conn) {
+                   die ("Connection failed: {mysqli_connector_error()}");
+            }
+            $sql = "select * from egg_list;";
+            $result = mysqli_query ($conn, $sql);
+        ?>
     </head>
     <body>
         <div>
@@ -70,6 +83,8 @@
                     <label for="morning">Dinner</label><br>
                     <input type="checkbox" id="supper" name="supper" value="supper">
                     <label for="morning">Supper</label><br>
+
+    
                 <input type="submit" value="Done">
             </form>
         </div>
