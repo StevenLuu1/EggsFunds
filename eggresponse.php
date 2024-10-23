@@ -25,7 +25,6 @@
     <?php
         $sql = "INSERT INTO egg_list (egg_name, egg_eat, egg_fav, egg_time) VALUES ('$egg_fname',$egg_eat,'$egg_fav','$egg_time');";
         $result = mysqli_query($conn, $sql);
-        $row=mysqli_result($result);
         
         echo "Hello, this is a review of your information!:\n"."<br>";
         echo "Your name is {$row['egg_name']}.\n"."<br>";
