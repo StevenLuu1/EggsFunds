@@ -4,7 +4,7 @@
         <?php                
             $server = "localhost";
             $username = "pblu";
-            $password = "pblufows;"
+            $password = "pblufows";
             $database = "dbegg";
             $conn = mysqli_connect($server, $username, $password, $database);
             // Check connection
