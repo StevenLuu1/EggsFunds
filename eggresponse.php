@@ -23,7 +23,7 @@
     </head>
     <body>
     <?php
-        $sql = "INSERT INTO egg_list (egg_name, egg_name, egg_eat, egg_fav, egg_time) VALUES ('$egg_fname ','$egg_lname',$egg_eat,'$egg_fav','$egg_time');";
+        $sql = "INSERT INTO egg_list (egg_name, egg_eat, egg_fav, egg_time) VALUES ('$egg_fname ',$egg_eat,'$egg_fav','$egg_time');";
         $result = mysqli_query($conn, $sql);
 
         echo "Hello, this is a review of your information!:\n";
