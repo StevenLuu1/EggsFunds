@@ -14,7 +14,8 @@
             $sql = "select * from egg_list;";
             $result = mysqli_query ($conn, $sql);
 
-            $egg_name = $_POST['fname'];
+            $egg_fname = $_POST['fname'];
+            $egg_lname = $_POST['lname'];
             $egg_eat = $_POST['eggs'];
             $egg_fav = $_POST['favegg'];
             $egg_time = $_POST['breakfast'];
@@ -22,7 +23,7 @@
     </head>
     <body>
     <?php
-        $sql = "INSERT INTO egg_list (egg_name, egg_eat, egg_fav, egg_time) VALUES ('$egg_name',$egg_eat,'$egg_fav','$egg_time');";
+        $sql = "INSERT INTO egg_list (egg_name, egg_name, egg_eat, egg_fav, egg_time) VALUES ('$egg_fname ','$egg_lname',$egg_eat,'$egg_fav','$egg_time');";
         $result = mysqli_query($conn, $sql);
 
         echo "Hello, this is a review of your information!:\n";
