@@ -27,7 +27,7 @@
         $result = mysqli_query($conn, $sql);
         
         
-        echo "Hello, this is a review of your information!:\n";
+        echo "Hello, this is a review of your information!:\n"."<br>";
         echo "Your name is {$row['egg_name']}.\n";
         echo "You eat {$row['egg_eat']} a day.\n";
         echo "Your favorite type of egg is {$row['egg_fav']}\n";
