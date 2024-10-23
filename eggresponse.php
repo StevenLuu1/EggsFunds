@@ -14,15 +14,15 @@
             $sql = "select * from egg_list;";
             $result = mysqli_query ($conn, $sql);
 
-            $egg_name = htmlspecialchars($_POST['fname']);
-            $egg_eat = (int)$_POST['eggs'];
-            $egg_fav = htmlspecialchars($_POST['favegg']);
-            $egg_time = htmlspecialchars($_POST['breakfast']);
+            $egg_name = $_POST['fname'];
+            $egg_eat = $_POST['eggs'];
+            $egg_fav = $_POST['favegg'];
+            $egg_time = $_POST['breakfast'];
         ?> 
     </head>
     <body>
     <?php
-        $sql = "INSERT INTO users (egg_name, egg_eat, egg_fav, egg_time) VALUES ('$egg_name',$egg_eat,'$egg_fav','$egg_time');";
+        $sql = "INSERT INTO egg_list (egg_name, egg_eat, egg_fav, egg_time) VALUES ('$egg_name',$egg_eat,'$egg_fav','$egg_time');";
         $result = mysqli_query($conn, $sql);
             
         //close connection
