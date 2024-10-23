@@ -27,10 +27,10 @@
         $result = mysqli_query($conn, $sql);
         
         echo "Hello, this is a review of your information!:\n"."<br>";
-        echo "Your name is {$row['egg_name']}.\n"."<br>";
-        echo "You eat {$row['egg_eat']} a day.\n"."<br>";
-        echo "Your favorite type of egg is {$row['egg_fav']}\n"."<br>";
-        echo "You eat egg during the {$row['egg_time']}\n"."<br>";
+        echo "Your name is {$result['egg_name']}.\n"."<br>";
+        echo "You eat {$result['egg_eat']} a day.\n"."<br>";
+        echo "Your favorite type of egg is {$result['egg_fav']}\n"."<br>";
+        echo "You eat egg during the {$result['egg_time']}\n"."<br>";
         
 
         //close connection
