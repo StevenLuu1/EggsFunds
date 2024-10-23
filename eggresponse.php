@@ -27,10 +27,7 @@
         $result = mysqli_query($conn, $sql);
         
         foreach($result as $row) {
-        echo "Hello, this is a review of your information!:\n";
-        echo "Your name is {$row['egg_name']}.\n";
-        echo "You eat {$row['egg_eat']} a day.\n";
-        echo "Your favorite type of egg is {$row['egg_fav']}\n";
+        
         echo "You eat egg during the {$row['egg_time']}\n";
         }
 
