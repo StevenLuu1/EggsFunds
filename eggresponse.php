@@ -25,13 +25,13 @@
     <?php
         $sql = "INSERT INTO egg_list (egg_name, egg_eat, egg_fav, egg_time) VALUES ('$egg_fname',$egg_eat,'$egg_fav','$egg_time');";
         $result = mysqli_query($conn, $sql);
-        
+        $row=mysqli_fetch_array($result);
         
         echo "Hello, this is a review of your information!:\n"."<br>";
-        echo "Your name is {$row['egg_name']}.\n";
-        echo "You eat {$row['egg_eat']} a day.\n";
-        echo "Your favorite type of egg is {$row['egg_fav']}\n";
-        echo "You eat egg during the {$row['egg_time']}\n";
+        echo "Your name is {$row['egg_name']}.\n"."<br>";
+        echo "You eat {$row['egg_eat']} a day.\n"."<br>";
+        echo "Your favorite type of egg is {$row['egg_fav']}\n"."<br>";
+        echo "You eat egg during the {$row['egg_time']}\n"."<br>";
         
 
         //close connection
