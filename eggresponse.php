@@ -25,7 +25,7 @@
     <?php
         $sql = "INSERT INTO egg_list (egg_name, egg_eat, egg_fav, egg_time) VALUES ('$egg_fname',$egg_eat,'$egg_fav','$egg_time');";
         $result = mysqli_query($conn, $sql);
-        $sqli = "select * from egg_list "
+        $sqli = "select * from egg_list;";
         $resulti = mysqli_query($conn, $sql);
 
         foreach ($resulti as $row) {
