@@ -31,10 +31,10 @@
         echo "Hello, this is a review of your information!:\n"."<br>";
         
         foreach ($resulti as $row) { 
-        echo "Your name is {$row['egg_name']}.\n".
-        "You eat {$row['egg_eat']} a day.\n".
-        "Your favorite type of egg is {$row['egg_fav']}\n".
-        "You eat egg during the {$row['egg_time']}\n"; 
+        echo "Your name is {$row['egg_name']}."."<br>".
+        "You eat {$row['egg_eat']} a day."."<br>".
+        "Your favorite type of egg is {$row['egg_fav']}"."<br>".
+        "You eat egg during the {$row['egg_time']}"; 
         }
 
 
