@@ -50,7 +50,7 @@
                 </fieldset>
 
                 <h3>What do you like about eggs?</h3>
-                <textarea name="message" rows="5" cols="30"></textarea>
+                <textarea name="message" rows="5" cols="30"></textarea> 
 
                 <h3>How many eggs do you eat a day?</h3>
                 <label for="eggs">Choose quantity:</label>
