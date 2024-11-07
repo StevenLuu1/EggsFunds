@@ -25,16 +25,18 @@
     <?php
         $sql = "INSERT INTO egg_list (egg_name, egg_eat, egg_fav, egg_time) VALUES ('$egg_fname',$egg_eat,'$egg_fav','$egg_time');";
         $result = mysqli_query($conn, $sql);
-        $sqli = "select * from egg_list;";
+        $sqli = "select * from egg_list where egg_name='$egg_fname';";
         $resulti = mysqli_query($conn, $sqli);
 
-        foreach ($resulti as $row) {
         echo "Hello, this is a review of your information!:\n"."<br>";
-        echo "Your name is {$row['egg_name']}.\n"."<br>";
-        echo "You eat {$row['egg_eat']} a day.\n"."<br>";
-        echo "Your favorite type of egg is {$row['egg_fav']}\n"."<br>";
-        echo "You eat egg during the {$row['egg_time']}\n"."<br>";
+        
+        foreach ($resulti as $row) { 
+        echo "Your name is {$row['egg_name']}.\n".
+        "You eat {$row['egg_eat']} a day.\n".
+        "Your favorite type of egg is {$row['egg_fav']}\n".
+        "You eat egg during the {$row['egg_time']}\n"; 
         }
+
 
         //close connection
         mysqli_close($conn);
