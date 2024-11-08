@@ -14,11 +14,11 @@
             $sql = "select * from egg_list;";
             $result = mysqli_query ($conn, $sql);
 
-            $egg_fname = $_POST['fname'];
-            $egg_lname = $_POST['lname'];
-            $egg_eat = $_POST['eggs'];
-            $egg_fav = $_POST['favegg'];
-            $egg_time = $_POST['breakfast'];
+            $egg_fname = htmlspecialchars($_POST['fname']);
+            $egg_lname = htmlspecialchars($_POST['lname']);
+            $egg_eat = int($_POST['eggs']);
+            $egg_fav = htmlspecialchars($_POST['favegg']);
+            $egg_time = htmlspecialchars($_POST['breakfast']);
         ?> 
     </head>
     <body>
