@@ -18,7 +18,7 @@
             $egg_lname = htmlspecialchars($_POST['lname']);
             $egg_eat = (int)$_POST['eggs'];
             $egg_fav = htmlspecialchars($_POST['favegg']);
-            $egg_time = htmlspecialchars($_POST['breakfast']).htmlspecialchars($_POST['dinner']).htmlspecialchars($_POST['supper']);
+            $egg_time = htmlspecialchars($_POST['breakfast'])." ".htmlspecialchars($_POST['dinner'])." ".htmlspecialchars($_POST['supper']);
 
         ?> 
     </head>
