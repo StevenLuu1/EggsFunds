@@ -80,9 +80,9 @@
                     <input type="checkbox" id="breakfast" name="breakfast" value="breakfast">
                     <label for="breakfast">Morning</label><br>
                     <input type="checkbox" id="dinner" name="dinner" value="dinner">
-                    <label for="morning">Dinner</label><br>
+                    <label for="dinner">Dinner</label><br>
                     <input type="checkbox" id="supper" name="supper" value="supper">
-                    <label for="morning">Supper</label><br>
+                    <label for="supper">Supper</label><br>
 
     
                 <input type="submit" value="Done">
