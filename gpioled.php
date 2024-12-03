@@ -1,3 +1,3 @@
 <?php                
-    shell_exec("gpio toggle 25");
+    shell_exec("gpio toggle 25");  
 ?> 
