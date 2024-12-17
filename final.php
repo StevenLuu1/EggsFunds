@@ -18,7 +18,7 @@
     $ip_add = $_SERVER['REMOTE_ADDR'];
 
     //put info into database
-    $sqli = "INSERT INTO angel (ip_add, select_t) VALUES ('$ip_add','$search');";
+    $sqli = "INSERT INTO angel (ip_add, search_t) VALUES ('$ip_add','$search');";
     $result = mysqli_query($conn, $sqli);
 
     //close connection
