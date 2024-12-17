@@ -1,4 +1,6 @@
 <p><?= $_SERVER['REMOTE_ADDR'] ?></p>
 <?php
-    header('Location: https://google.com/search?q="varaible"');
+    $search = htmlspecialchars($_POST['search']);
+
+    header('Location: https://google.com/search?q="$search"');
 ?>
