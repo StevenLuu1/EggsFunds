@@ -21,6 +21,8 @@
     $sqli = "INSERT INTO angel (ip_add, select_t) VALUES ('$ip_add','$search');";
     $result = mysqli_query($conn, $sqli);
 
+    //close connection
+    mysqli_close($conn);
 
     //redirect
     header("Location: https://google.com/search?q=$search");
