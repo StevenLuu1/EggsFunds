@@ -2,5 +2,5 @@
 <?php
     $search = htmlspecialchars($_POST['search']);
 
-    header('Location: https://google.com/search?q="$search"');
+    header("Location: https://google.com/search?q='$search'");
 ?>
