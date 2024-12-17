@@ -15,7 +15,7 @@
     //search var for redirect
     $search = htmlspecialchars($_POST['search']);
     //ip address retrieved
-    $ip_add = "$_SERVER['REMOTE_ADDR']";
+    $ip_add = $_SERVER['REMOTE_ADDR'];
 
     //put info into database
     $sqli = "INSERT INTO angel (ip_add, select_t) VALUES ('$ip_add','$search');";
